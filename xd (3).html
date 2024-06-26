@@ -1,0 +1,94 @@
+<html> 
+    <head>
+        <title>
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                font-family: sans-serif;
+                margin: 0;
+
+            }
+            header{
+                min-height: 25px;
+                background-color: aquamarine ;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                transition: 0.7s;
+                padding: 5px 5px;
+                z-index: 5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            .logo{
+                display: flex;
+                align-items: center;
+                color: black;
+                width: 30%;
+                height: 10%;
+
+            }
+            .logo img{
+               height: 100px; 
+               margin-right: 100px;
+               right: 40;
+            }
+            nav a{
+                font-weight: 1000;
+                padding-right: 50px;
+                align-items: center;
+            }
+            nav a:hover{
+                color: white;
+            }
+            @media (max-width: 700px){
+                header{
+                    flex-direction: column;
+                }
+                nav{
+                    padding: 10px 0px;
+                }
+            }
+            header ul{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .cuerpo{
+                height: 60vh;
+                background: url(img/cole.jpeg) no repeat;
+                background-size: cover;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo"> 
+                <img src="images.jpeg" width="20%" height="30%">
+                <h2 >Vicente Donoso Torrez</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="#">Inicio</a></li>
+                    <li> <a href="#">El Colegio</a></li>
+                    <li> <a href="#">Autoridades</a></li>
+                    <li> <a href="#">Noticias</a></li>
+                    <li> <a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="cuerpo">
+        <img src="cole.jpeg" width="100%" height="100%">
+    </div>
+    </body>
+</html>
